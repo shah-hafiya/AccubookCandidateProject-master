@@ -10,6 +10,7 @@ namespace AccubookCandidateProject.Models
         public DateTime Departure { get; set; }
         public decimal Rate { get; set; }
         public int HotelId { get; set; }
+
         public string HotelName { get; set; }
     }
 
