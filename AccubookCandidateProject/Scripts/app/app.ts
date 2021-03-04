@@ -23,6 +23,7 @@
             return data;
         });
 
+
         ko.applyBindings();   
           
         // your code here - to dump data in a knockout observable array you pass an array in like you would with a method, e.g. this.bookings(myArray)
