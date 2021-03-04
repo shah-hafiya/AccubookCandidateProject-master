@@ -1,0 +1,111 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Accubook Candidate Assessment</h1>
+    <p class="lead">Follow the instructions given with the various tasks. Try to document your approach with the code you implement.</p>
+</div>
+
+<div class="alert alert-info">
+    Knockout is a lightweight library used for data binding similar to Angular, React, and Vue. The only bindings you need to use are the <b>text</b> and <b>foreach</b> bindings. For more info check out the documentation here:
+    <ul>
+        <li>
+            <a target="_blank" href="https://knockoutjs.com/documentation/text-binding.html">https://knockoutjs.com/documentation/text-binding.html</a>
+        </li>
+        <li>
+            <a target="_blank" href="https://knockoutjs.com/documentation/foreach-binding.html">https://knockoutjs.com/documentation/foreach-binding.html</a>
+        </li>
+    </ul>
+</div>
+
+<div class="row">
+    <div class="col-12 form-group">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Task #1 - .NET, WebApi, JavaScript, MVVM</h5>
+                <p class="card-text">
+                    <ol>
+                        <li>
+                            Implement the <b>GetBookings</b> method in the <b>Bookings</b> controller.
+                        </li>
+                        <li>
+                            Implement the <b>getBookings</b> method in <b>app.ts</b> to retrieve data from the /api/bookings endpoint implemented above.
+                        </li>
+                        <li>
+                            At the moment the Booking data will display as a messy list. Adapt the HTML to display the bookings as a table using <b>Bootstrap</b>.
+                        </li>
+                        <li>
+                            The total value currently displays a 0 as the <b>getTotal</b> method is missing implementation. Implement this method to display the total price for the number of night stayed by the booker.
+                        </li>
+                    </ol>
+                </p>
+                <a href="/Bookings" class="card-link">Go to Bookings page</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 form-group">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Task #2 - .NET, MVC, Razor</h5>
+                <p class="card-text">
+                    <ol>
+                        <li>
+                            Inspect the code in the <b>Hotels</b> controller.
+                        </li>
+                        <li>
+                            Write the rest of the code needed to return data back to the <b>Razor</b> view. Attempt to identify any potential issues with the existing code that could be affecting performance.
+                        </li>
+                        <li>
+                            If you have identified any potential performance issues, implement the optimisations and document why you did it.
+                        </li>
+                        <li>
+                            Implement the <b>TotalBookingsValue</b>, <b>AverageBookingRate</b>, <b>AverageNightsStayed</b> properties on <b>HotelDTO</b>.
+                        </li>
+                        <li>
+                            Implement the <b>TotalBookingsValueForAllHotels</b> on <b>HotelsViewModel</b>.
+                        </li>
+                        <li>
+                            Once you have data returning back to the <b>Razor</b> view, use <b>Razor</b> to display the Hotel data using the existing HTML template for a Hotel listing.
+                        </li>
+                    </ol>
+                </p>
+                <a href="/Hotels" class="card-link">Go to Hotels page</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 form-group">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Task #3 - JavaScript, jQuery</h5>
+                <p class="card-text">
+                    <ol>
+                        <li>
+                            Inspect the <b>Reviews</b> page.
+                        </li>
+                        <li>
+                            Implement the code for the <b>averageRating</b> method in <b>app.ts</b>. This should average the review score based on the reviews array. The value should be nicely rounded to 2 decimal places.
+                        </li>
+                        <li>
+                            Figure out why the 'Post a review' button is not opening the modal.
+                        </li>
+                        <li class="mb-3">
+                            Once you have the modal working, create a form using <b>Bootstrap</b> which takes in a <b>name</b> (string), <b>message</b> (string), and <b>rating</b> (number) input from the user.
+                            <h5 class="mt-3">Example form:</h5>
+                            <img src="~/Content/img/review_modal.png" />
+                        </li>
+                        <li>
+                            Use <b>jQuery</b> to extract the values from the form and add the new Review to the existing array of reviews in the <b>addReview</b> method, which should make it appear on the Reviews page.
+                        </li>
+                    </ol>
+                </p>
+                <a href="/Reviews" class="card-link">Go to Reviews page</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="alert alert-info">
+    Feel free to use any resources available. You may refactor code as you see fit to suit your implementation.
+    Places where you need to add your own code are marked with a 'your code here' comment.
+</div>

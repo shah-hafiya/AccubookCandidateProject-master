@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "Reviews";
+}
+
+<h3>Reviews | Average rating: <!-- ko text: averageRating() --><!-- /ko --> / 5 ★</h3>
+
+<div class="mt-4">
+    <!-- ko foreach: reviews -->
+    <div class="card form-group">
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <h5 class="card-title">
+                        <!-- ko text: name --><!-- /ko -->
+                    </h5>
+                    <p class="card-text">
+                        <!-- ko text: message --><!-- /ko -->
+                    </p>
+                </div>
+                <div class="col-3 text-right">
+                    <h6>Rating</h6>
+                    <div class="badge badge-primary badge-pill">
+                        <!-- ko text: rating --><!-- /ko --> / 5 ★
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /ko -->
+
+    <button class="btn btn-primary" data-toggle="modal" data-target="#addModal">
+        Post a review
+    </button>
+</div>
+
+<div id="addReviewModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add a review</h5>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- your code here -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bind="click: function() { addReview() }" data-dismiss="modal">Add Review</button>
+            </div>
+        </div>
+    </div>
+</div>
